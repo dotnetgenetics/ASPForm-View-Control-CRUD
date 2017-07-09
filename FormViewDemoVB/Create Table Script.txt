@@ -1,0 +1,19 @@
+﻿CREATE TABLE [dbo].[BookDetails](
+    [BookSerialNo] [int] IDENTITY(1,1) NOT NULL,
+    [BookISBN] [nchar](15) NULL,
+    [BookTitle] [varchar](120) NULL,
+    [BookAuthor] [varchar](60) NULL,
+    [BookPublisher] [varchar](50) NULL,
+    [BookCategory] [varchar](20) NULL,
+PRIMARY KEY CLUSTERED 
+(
+    [BookSerialNo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+ 
+ 
+GO
+ 
+ 
+SET ANSI_PADDING OFF
+GO
